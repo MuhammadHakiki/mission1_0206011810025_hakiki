@@ -75,11 +75,11 @@ class _BuyState extends State<Buy> {
                                 color: Colors.red,
                               ),
                               prefixIcon: Icon(Icons.person),
-                              prefixText: "Name : ",
+                              prefixText: "Email address : ",
                               prefixStyle: TextStyle(
                                   color: Colors.blue,
                                   fontWeight: FontWeight.w600),
-                              labelText: "Full Name",
+                              labelText: "Your email",
                               hintStyle: TextStyle(fontSize: 12),
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10))),
@@ -109,7 +109,7 @@ class _BuyState extends State<Buy> {
                               prefixStyle: TextStyle(
                                   color: Colors.blue,
                                   fontWeight: FontWeight.w600),
-                              labelText: "Full Name",
+                              labelText: "Your phone",
                               hintStyle: TextStyle(fontSize: 12),
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10))),
@@ -139,7 +139,7 @@ class _BuyState extends State<Buy> {
                               prefixStyle: TextStyle(
                                   color: Colors.blue,
                                   fontWeight: FontWeight.w600),
-                              labelText: "Full Name",
+                              labelText: "Your city",
                               hintStyle: TextStyle(fontSize: 12),
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10))),
