@@ -201,17 +201,20 @@ class _MyAppState extends State<NextGo> with SingleTickerProviderStateMixin {
             Container(
               alignment: Alignment.bottomRight,
               margin: EdgeInsets.only(bottom: 25, right: 25),
-              child: RaisedButton(
+              child: FlatButton(
                   color: Colors.transparent,
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
                         gradient: LinearGradient(colors: <Color>[
-                          Colors.amberAccent,
-                          Colors.cyanAccent
+                          Colors.redAccent,
+                          Colors.blueAccent
                         ])),
                     padding: EdgeInsets.all(10),
-                    child: Text("Book now"),
+                    child: Text(
+                      "Book now",
+                      style: TextStyle(fontSize: 20, color: Colors.white),
+                    ),
                   ),
                   onPressed: () {
                     Navigator.push(context,

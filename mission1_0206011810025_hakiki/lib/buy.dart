@@ -183,7 +183,7 @@ class _BuyState extends State<Buy> {
                                           Positioned(
                                               top: -50,
                                               child: CircleAvatar(
-                                                backgroundColor: Colors.blue,
+                                                backgroundColor: Colors.green,
                                                 child: Text(
                                                   "Success",
                                                   style:
@@ -262,7 +262,7 @@ class _BuyState extends State<Buy> {
                                   return Dialog(
                                     shape: RoundedRectangleBorder(
                                         borderRadius:
-                                            BorderRadius.circular(80)),
+                                            BorderRadius.circular(30)),
                                     child: Stack(
                                       alignment: Alignment.topCenter,
                                       overflow: Overflow.visible,
@@ -270,8 +270,62 @@ class _BuyState extends State<Buy> {
                                         Positioned(
                                             top: -50,
                                             child: CircleAvatar(
-                                              backgroundColor: Colors.blue,
-                                            ))
+                                              backgroundColor: Colors.red,
+                                              child: Text(
+                                                "Failed",
+                                                style: TextStyle(fontSize: 18),
+                                              ),
+                                              radius: 50,
+                                            )),
+                                        Container(
+                                          height: 270,
+                                          width: 190,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(5.0),
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: <Widget>[
+                                                SizedBox(
+                                                  height: 60,
+                                                ),
+                                                new Text(
+                                                  "Book Failed!!!!",
+                                                  textAlign: TextAlign.left,
+                                                  style: TextStyle(
+                                                      fontSize: 23,
+                                                      fontWeight:
+                                                          FontWeight.bold),
+                                                ),
+                                                SizedBox(
+                                                  height: 20,
+                                                ),
+                                                new Text(
+                                                  "Please fill all from field!!!",
+                                                  style:
+                                                      TextStyle(fontSize: 18),
+                                                ),
+                                                SizedBox(
+                                                  height: 25,
+                                                ),
+                                                Container(
+                                                  alignment:
+                                                      Alignment.bottomLeft,
+                                                  child: FlatButton(
+                                                      onPressed: () {
+                                                        Navigator.push(context,
+                                                            MaterialPageRoute(
+                                                                builder:
+                                                                    (context) {
+                                                          return NextGo();
+                                                        }));
+                                                      },
+                                                      child: Text("Continue")),
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        )
                                       ],
                                     ),
                                   );
